@@ -19,11 +19,10 @@ operations = {
     "/": divide
 }
 
-print(f"{logo}")
-
 def calculator():
+    print(f"{logo}")
     # First number input
-    num1 = int(input("What's the first number?: "))
+    num1 = float(input("What's the first number?: "))
     # Display operators to use
     for symbol in operations:
         print(f"{symbol}")
@@ -35,7 +34,7 @@ def calculator():
         # Select operator
         operation_symbol = input("Pick an operatior: ")
         # Second number input
-        num2 = int(input("What's the next number?: "))
+        num2 = float(input("What's the next number?: "))
         # Select the correct dictionary operation
         calculation_function = operations[operation_symbol]
         # Calculate the answer
